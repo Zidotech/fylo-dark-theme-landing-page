@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCard = ({ title, img, description, index }) => {
   const isSecondCard = index === 1; // Check if it's the second card
   return (
-    <div className="flex  flex-col text-center items-center gap-y-4  xs:px-10 sm:py-12 py-4 rounded-[20px]  sm:max-w-[550px] w-11/12 md:mr-10 sm:mr-5 mr-0 my-5 ">
+    <div className="flex  flex-col text-center items-center gap-y-4  xs:px-10 sm:py-12 py-4 rounded-[20px]  xl:max-w-[550px] md:w-2/4 w-11/12 xl:mr-10  mr-0 my-5 ">
       <img
         src={img}
         alt={title}

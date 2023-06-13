@@ -1,8 +1,13 @@
 import React from "react";
 
-const TestCard = ({ img, names, description, role }) => {
+const TestCard = ({ img, names, description, role, index }) => {
+  const isThirdCard = index === 2;
   return (
-    <div className="  flex sm:max-w-[450px] rounded-md w-full justify-between gap-y-5 p-5 xs:p-6 flex-col h-auto bg-DarkBlueTb test-card">
+    <div
+      className={` flex sm:max-w-[450px] rounded-md w-full justify-between gap-y-5 p-5 xs:p-6 flex-col h-auto bg-DarkBlueTb test-card ${
+        isThirdCard ? "xl:mt-0 mt-5 " : ""
+      }`}
+    >
       <h3 className="font-raleway text-[22px]">{description}</h3>
       <div className="flex xs:flex-row xs:text-left text-center flex-col gap-x-3 items-center">
         <img
